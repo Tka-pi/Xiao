@@ -754,7 +754,7 @@ if(alert_label==0){
     power_shift.rows[0].cells[1].innerHTML=differ[0].toFixed(2);
     power_shift.rows[0].cells[2].innerHTML=differ[1].toFixed(2);
     power_shift.rows[0].cells[3].innerHTML=differ[2].toFixed(2);
-    power_shift.rows[0].cells[4].innerHTML=differ[3].toFixed();
+    power_shift.rows[0].cells[4].innerHTML=differ[3].toFixed(2);
 
     if(w1==w2){
         for(let i=0;i<4;i++){
