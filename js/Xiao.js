@@ -377,7 +377,7 @@ function eval(virtual_atkr,virtual_crit,virtual_critd,virtual_hpr){
     }
     let critical=1+total_crit*(50+critd+virtual_critd+u_critd+critd_goma+critd_kokg)*0.0001;
 
-    let total_anemo=anemo+u_anemo+u_give+give_wahak+0.15+anemo_sok;
+    let total_anemo=anemo+u_anemo+u_give+give_wahak+anemo_sok;
 
     let buff_jump=1+total_anemo+burst_buff;
     let buff_skill=1+total_anemo+skill_kitain;
