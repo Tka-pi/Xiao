@@ -511,6 +511,12 @@ for (let w=0;w<weapon_num;w++){
                         var charge= relic1_matrix[r1][7]+relic2_matrix[r2][7]+relic3_matrix[r3][7]+relic4_matrix[r4][7]+relic5_matrix[r5][7];
                         var anemo=  relic4_matrix[r4][8]*0.01;
 
+                        if(series%(7**2)==0){
+                            atkr+=18;
+                        }
+                        if(series%(7**4)==0){
+                            atkr+=8+500/15;
+                        }
                         if(series%(5**2)==0){
                             anemo+=0.15;
                         }
@@ -663,6 +669,9 @@ console.log(differ);
 
 
 function relic_name(name){
+    if(name==7){
+        return"往生録";
+    }
     if(name==5){
         return"翠緑";
     }
